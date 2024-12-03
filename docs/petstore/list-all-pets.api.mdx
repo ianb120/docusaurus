@@ -1,0 +1,63 @@
+---
+id: list-all-pets
+title: "List all pets"
+description: "Retrieves a list of all pets available in the store."
+sidebar_label: "List all pets"
+hide_title: true
+hide_table_of_contents: true
+api: eJydU02P00AM/Ssjn6uk3WUvPVGJD4EQVBROKw5u6iazTDLDjBNtFfW/YyehG8qHEL009jy/mWc/98BYJljfw5Y4wZcFHCgV0Qa2voE1fCSOljpKBo2ziY0/GnTOBEEb7NA63DsytjFckUnsI2WwgEgp+CaRMPdws1zq38/EG/N29+G9wRjxpKRCaPz+gQp5xQIK3zA1rGUYgrMFaln+kLS2h1RUVKN+8SmQsA00UmeZ6jTLj4xyEKIPFNmOL7KHGSaJwqYUDD1iHZymVje3z+7gvIAGa/o79JVrj8eTYlOgYuL/M/yFLxWL5ZzWitiS4hx4exYUWx6KZDRw1t8C7n7Xyx3FjqKhGH0ERdXElReNUNIgHrmSINehSZgGuA69hzY6OamYQ1rnOQabTU/ICl/n3QquDbGN/tAWGpiRR+Rc0yTxlAjP/oFuN0IvXGJA2xz90Jwn9WanxjKb7ZtfCDYmWb1ADw17U2MjzRW3qqEuflS9I36VLbPl5DAsBoeNQwYl2LUh+Kg9E39Z1ZTGzPOZjqHFwSeWu2b173Q9fuzG9Tv7J0v/705NZmF65Dw4tI0aaWh8P034HsK0xJW8TuO+32Oiz9Gdz5r+1lI8SV4+O4xWr9FIeCrCg/RfLfGVTtqNoqCgjejQtcOKXe+hzupitNcvP0lbvgM023SJ
+sidebar_class_name: "get api-method"
+info_path: docs/petstore/pet-store-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"List all pets"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/pets"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieves a list of all pets available in the store.
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"A JSON array of pet objects","content":{"application/json":{"schema":{"type":"array","items":{"type":"object","properties":{"id":{"type":"string","example":"12345"},"name":{"type":"string","example":"Fluffy"},"species":{"type":"string","example":"Dog"},"age":{"type":"integer","example":3}},"title":"Pet"}}}}},"500":{"description":"Server error"}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: create-a-new-pet
+title: "Create a new pet"
+description: "Adds a new pet to the store."
+sidebar_label: "Create a new pet"
+hide_title: true
+hide_table_of_contents: true
+api: eJyNVMmO2zAM/RWB5zTLZHrxqekGzKlBMz0Fc1AkxtbUllRJzkxg5N9Lys7SpFsOgSWRj9R7j+ogyTJCsYYlpghPI9AYVTA+GWehgIXWUUhh8UV4TCI5kSoUMbmAYxhBwB8txvTe6T0U3VUuIQq3eUZFeZVMBIIERhAbFFJr1L/ADWgmoIYihRZHoJxNaBMjS+9royQjT54jw3cQVYWN5K+090gF+2IE5IPzGJLByKdGX8TEFIwtKQZfZeNr3prdze/fwmEEVjb499DPdbvd7jk2elQD/p/DP7qSY2V5CWvoUiWGy8D5gaKSSTmJaIPDgXcCRu9s7KvcTWe/p1gFlInIjK1SGOO2revc4f10epvwYHeyNloY61suM4IGU+WIIfAuZu5kqmg18ewHuieGHQZ2SAdtqOmkSsnHYjKR3oyHG4yVaya7GVy7ZxmcbhUvRI9DfV3DRDIg8Tb+D7hVH3rCIreyF76eTfjpyGiv+iDtUdmjfBfqZYkGhebEhrFbl7U6iyFWbE+xWD7cNLQQ0XA9PmQzN9ISEs0Lz8ppSJi/Pn42no6n0BtbqmzsoTMGWLXeu8AakK0NcxT7nXcXvGTNWCqqdZH/IZvgPKnXrXbnYfrXTA82TfiaJr6WxrKZsmbdYI41+OGxqNgztO66jYz4LdSHA2+THoEehDV97mQwcsNcrp8Ip0KpSTp203fcc+N9W28euSqH1y1Xv5l3Fvtk1eWX1SMFb4Znp3Gac4J84UeE/gugD5evnmcn73VQS1u2WWroMfn3E1rhr9M=
+sidebar_class_name: "post api-method"
+info_path: docs/petstore/pet-store-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Create a new pet"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/pets"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Adds a new pet to the store.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"description":"Pet object that needs to be added to the store","required":true,"content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"string","example":"12345"},"name":{"type":"string","example":"Fluffy"},"species":{"type":"string","example":"Dog"},"age":{"type":"integer","example":3}},"title":"Pet"}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"201":{"description":"Pet created successfully"},"400":{"description":"Invalid input"}}}
+>
+  
+</StatusCodes>
+
+
+      

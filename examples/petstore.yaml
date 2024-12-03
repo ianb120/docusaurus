@@ -1,0 +1,87 @@
+openapi: 3.0.3
+info:
+  title: Pet Store API
+  description: A simple API to manage a pet store.
+  version: 1.0.0
+  contact:
+    name: API Support
+    email: support@example.com
+servers:
+  - url: https://api.example.com/v1
+    description: Production server
+  - url: https://staging.api.example.com/v1
+    description: Staging server
+paths:
+  /pets:
+    get:
+      summary: List all pets
+      tags:
+        - Pets
+      description: Retrieves a list of all pets available in the store.
+      responses:
+        '200':
+          description: A JSON array of pet objects
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Pet'
+        '500':
+          description: Server error
+    post:
+      summary: Create a new pet
+      tags:
+        - Pets
+      description: Adds a new pet to the store.
+      requestBody:
+        description: Pet object that needs to be added to the store
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Pet'
+      responses:
+        '201':
+          description: Pet created successfully
+        '400':
+          description: Invalid input
+  /pets/{petId}:
+    get:
+      summary: Get a specific pet
+      tags:
+        - Pets
+      description: Retrieves details of a pet by its ID.
+      parameters:
+        - name: petId
+          in: path
+          required: true
+          description: ID of the pet to retrieve
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Pet details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Pet'
+        '404':
+          description: Pet not found
+components:
+  schemas:
+    Pet:
+      type: object
+      properties:
+        id:
+          type: string
+          example: "12345"
+        name:
+          type: string
+          example: "Fluffy"
+        species:
+          type: string
+          example: "Dog"
+        age:
+          type: integer
+          example: 3

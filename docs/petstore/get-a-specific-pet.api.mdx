@@ -1,0 +1,71 @@
+---
+id: get-a-specific-pet
+title: "Get a specific pet"
+description: "Retrieves details of a pet by its ID."
+sidebar_label: "Get a specific pet"
+hide_title: true
+hide_table_of_contents: true
+api: eJyNVMFu2zAM/RVBpxUI7KTNLj4tQNYit6DZTkUOikzb6hxLleighuF/H2m7qZd0RU+WpadH8vFRrUSVB5k8yS1gkPuZTCFobxwaW8lEPgJ6AycIIgVUpgzCZkIJBygOjTAYxGYdyZl0yqsjIHjmamVFP3SbYJuUTg1TOYUFrT281MZDKhP0NVzG26w5ABbQh0Ar/JgA3Qy6gKOSSSuxcUwf6KjKZdftmTY4WwUIfH47n/PnX2oq8K0IItO2QqiQYcq50mjFsPg5MLa9jmUPz6CRK/XWgUczRDLpdT4zCa/q6EreWtzeLb/LbjYq8hn0vqyzrGFscKBH/v/D1zZnrMqntIaKysFPgXcdodBgf4k0ILl4ZzlffixRZVFktq5SyTDqaWGpRplDXzz3MJExNSfEbd/ejjsD/vTW+tqXhCgQXUjiWDkTjalE2h7j00JetnzrbVpr/hEDD5V1SRPIpSRA9AW63QA9c+3ZfpntRXpXQezQehCr7eaKYCWC4QB8yA48qopEHk0f+Bobnusd8ItoHs1HRyndO2q0PxPsauesZ+3IT4ZrCsPOj0kdvdTOBqRYk/sPFFCJ3g2Z0Rz/Mtn23cdfHtXRKgivGLtS0WxS8F7uduzvEw8uD0kyDDBJWFByfNC2BxXgty+7jrdfavAN7dPypLxRB9aXTJCawGsyTqbKcDnl06y/PY7vwY34bPY/THrcVFXDDVFlzX+0/APN+fHp9gQsQKXkBc5sOFtpDQ4nt67eAPbN2fwPP39Ri/4CJ7O9hw==
+sidebar_class_name: "get api-method"
+info_path: docs/petstore/pet-store-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get a specific pet"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/pets/{petId}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieves details of a pet by its ID.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"petId","in":"path","required":true,"description":"ID of the pet to retrieve","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Pet details","content":{"application/json":{"schema":{"type":"object","properties":{"id":{"type":"string","example":"12345"},"name":{"type":"string","example":"Fluffy"},"species":{"type":"string","example":"Dog"},"age":{"type":"integer","example":3}},"title":"Pet"}}}},"404":{"description":"Pet not found"}}}
+>
+  
+</StatusCodes>
+
+
+      
